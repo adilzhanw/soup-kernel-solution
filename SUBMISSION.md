@@ -1,7 +1,7 @@
 # Submission: adk / Adilzhan Zhanali
 
 ## Links
-- Repository, final commit: https://github.com/adilzhanw/soup-kernel-solution/commit/93da5af7729dbcafdfddb66bb0b470d6b8905cd3
+- Repository, final commit: https://github.com/adilzhanw/soup-kernel-solution/commit/c1a7b12ef59aabf988313e29d575504a4098c8bc
 - Public Kaggle notebook, the saved version (`COMMIT` in it = the sha above; the same link must
   be in your README):
   https://www.kaggle.com/code/adilzhanw/soup-kernel-benchmark  _(to be created + saved; COMMIT cell pins the sha above)_
