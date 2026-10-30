@@ -1,23 +1,23 @@
-# Submission: <team name>
+# Submission: adk / Adilzhan Zhanali
 
 ## Links
-- Repository, final commit: https://github.com/<you>/<repo>/commit/<sha>
+- Repository, final commit: https://github.com/adilzhanw/soup-kernel-solution/commit/6da837d2eba4465bbd5e2364126b9cb14befa20b
 - Public Kaggle notebook, the saved version (`COMMIT` in it = the sha above; the same link must
   be in your README):
-  https://www.kaggle.com/code/<you>/<notebook>?scriptVersionId=<version>
-- Demo video (up to 3 minutes): <link>
-- Presentation: <link>
+  https://www.kaggle.com/code/adilzhanw/soup-kernel-benchmark  _(to be created + saved; COMMIT cell pins the sha above)_
+- Demo video (up to 3 minutes): _(to be linked)_
+- Presentation: _(to be linked)_
 
 ## Team (up to 4 people)
 | Name | Role | GitHub | Kaggle | Contact (captain) |
 |---|---|---|---|---|
-| | | | | |
+| Adilzhan Zhanali | kernels + integration | adilzhanw | adilzhanw | captain |
 
 ## Our kernels
 | Kernel (`@triton.jit` name) | File | What it replaces | Share of the training time (check 4) |
 |---|---|---|---|
-| `fused_softmax_fwd_kernel` | `solution/fused_loss.py` | CE + entropy + argmax-accuracy (3 full-softmax passes) | % |
-| `fused_softmax_bwd_kernel` | `solution/fused_loss.py` | CE gradient scatter (`p − 1_v`) | % |
+| `fused_ce_h_acc_fwd` | `solution/fused_loss.py` | CE + entropy + argmax-accuracy (3 full-softmax passes) | % |
+| `fused_ce_h_acc_bwd` | `solution/fused_loss.py` | CE gradient scatter (`p − 1_v`) | % |
 
 Ideas taken from other kernels, with links (we wrote the code ourselves):
 - Fused softmax cross-entropy is a standard technique (cf. liger-kernel / Unsloth fused CE); we
